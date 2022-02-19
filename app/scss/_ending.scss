@@ -1,0 +1,135 @@
+.ending {
+	background-color: #fafafa;
+
+}
+
+
+.ending {
+
+
+	&__item {
+		
+        display: grid;
+		grid-template-columns: 1fr;
+
+		@include breakpoint-up(medium) {
+			grid-template-columns: repeat(3, 1fr);
+
+			.col3 {
+                grid-column: 1 / span 2;
+            }
+
+
+		}
+		
+		border-radius: 2.5rem;
+		overflow: hidden;
+		background-color: #fafafa;
+
+	}
+
+	&__item1 {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr );
+		gap: 1rem;
+		border-radius: 2.5rem;
+		overflow: hidden;
+		background-color: $white;
+		box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
+		
+		@include breakpoint-up(medium) {
+			grid-template-columns: repeat(2, 1fr );
+			.text{
+				font-size: 1.2rem;
+			}
+		}
+
+		
+	}
+	
+	&__image1 {
+		width: 3rem;
+		height: 3rem;
+		float: left;
+		background-size: contain;
+
+	}
+
+.text {
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: black;
+	margin-left: 4rem;
+
+	@include breakpoint-up(medium) {
+		font-size: 1.5rem;
+	}
+	
+}
+
+
+	button, .btn4 {
+		display: inline-block;
+		padding: 0.575rem 1.1875rem;
+		background-color:  $red; 
+		border-radius: 50px;
+		cursor: pointer;
+		color: white;
+		font-weight: 900;
+		transition:  300ms ease-in-out;
+
+	
+		&:hover {
+			background-color: $blue;
+			color: white;
+		}
+	}
+
+
+
+	&__image {
+		height: 18rem;
+		width: 21rem;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center center;
+		object-fit: scale-down;
+		float: left;
+
+		@include breakpoint-up(medium){
+			height: 15rem;
+			width: 18rem;
+		}
+		@include breakpoint-up(large){
+			height: 18rem;
+			width: 21rem;
+		}
+	}
+
+	&__text {
+		padding: 1rem;
+		color: $grayishBlue;
+
+		@include breakpoint-up(medium) {
+			padding: 1.875rem 1.5625rem;
+		}
+	}
+
+
+	&__title {
+		font-size: 1.5rem;
+		line-height: 1.2;
+		color: black;
+		margin-bottom: 1rem;
+		font-weight: 700;
+
+		@include breakpoint-up(large) {
+			font-size: 2.8rem;
+		}
+	}
+
+	&__description {
+		font-size: 1rem;
+        color: black;
+	}
+}

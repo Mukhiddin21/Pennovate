@@ -3,11 +3,11 @@
 
     &__image {
         position: relative;
-        background-image: url('images/hero.png');
+        background-image: url('/images/hero1.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
-        min-height: 40rem;
+        min-height: 35rem;
         
 
 
@@ -16,7 +16,7 @@
             position: relative;
             height: 100%;
             width: 100%;
-            background-image: url('images/hero.png');
+            background-image: url('/images/hero1.png');
             background-size: 90%;
             background-repeat: no-repeat;
             background-position: center top;
@@ -46,7 +46,7 @@
     left: 50%;
     transform: translateX(-50%);
     width: 360px;
-    height: 490px;
+    height: 530px;
     padding: 16px;
     background-color: white;
     border-radius: 2rem;
@@ -60,11 +60,62 @@
         font-weight: 700;
         text-align: center;
     }
+
+    .n_time {
+        margin: 2px 2px 10px 2px;
+        color: $blue;
+        font-size: 2.25rem;
+        font-weight: 700;
+        text-align: center;
+        font-family: system-ui;
+        letter-spacing: 0.3rem;
+    }
+
+    .hms {
+        margin: 2px 2px 10px 2px;
+        color: gray;
+        font-size: 15px;
+        font-weight: 400;
+        text-align: center;
+        word-spacing: 0.6rem;
+    }
+
+    b{
+        color: red;
+        font-weight: 400;
+        margin-left: 1rem;
+    }
     
+    .input-icons i {
+        position: absolute;
+    }
+      
+    .input-icons {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+      
+    .icon {
+        padding: 15px;
+        min-width: 50px;
+        position: absolute;
+        color: $blue;
+    }
+      
+    .input-field {
+        width: 100%;
+        padding: 10px;
+        text-align:start;
+    }
+
+    ::placeholder {
+        position: absolute;
+        margin-left: 25px;
+        }
     }
 
 
-  /* Full-width input fields */
+  /* Full-width input   fields */
     input[type=text], input[type=password] {
     width: 100%;
     padding: 15px;
@@ -88,6 +139,6 @@
         align-items: center;
         text-align: center;
         margin-bottom: 10px;
-        margin-top: 30px;
+        margin-top: 12px;
     }
 }

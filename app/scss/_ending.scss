@@ -6,19 +6,42 @@
 
 .ending {
 
+	&__text1{
+		@include breakpoint-up(large){
+			grid-area: txt;
+
+		}
+	}
+
+	&__btn4{
+		@include breakpoint-up(large){
+			grid-area: btn;
+			text-align: left;
+        	justify-self: start;
+		}
+	}
+
+	&__image{
+		@include breakpoint-up(large){
+			grid-area: img;
+
+		}
+	}
 
 	&__item {
 		
         display: grid;
 		grid-template-columns: 1fr;
 
-		@include breakpoint-up(medium) {
-			grid-template-columns: repeat(3, 1fr);
-
-			.col3 {
-                grid-column: 1 / span 2;
-            }
-
+		@include breakpoint-up(large) {
+			display: grid;
+			grid-template-columns: 2fr 1fr ;
+			grid-template-rows: 1fr auto;
+			grid-template-areas:
+			'txt img '
+			'btn img  ';
+			gap: 1px;
+		
 
 		}
 		
@@ -68,15 +91,20 @@
 }
 
 
+
 	button, .btn4 {
 		display: inline-block;
 		padding: 0.575rem 1.1875rem;
 		background-color:  $red; 
-		border-radius: 50px;
+		border-radius: 12px;
 		cursor: pointer;
 		color: white;
 		font-weight: 900;
 		transition:  300ms ease-in-out;
+		margin-left: 2rem;
+		margin-bottom: 4rem;
+		box-shadow: 0px 3px 12px rgba(15, 15, 15, 0.5);
+
 
 	
 		&:hover {
@@ -88,8 +116,8 @@
 
 
 	&__image {
-		height: 18rem;
-		width: 21rem;
+		height: 19rem;
+		width: 24rem;
 		background-size: contain;
 		background-repeat: no-repeat;
 		background-position: center center;
@@ -125,6 +153,7 @@
 
 		@include breakpoint-up(large) {
 			font-size: 2.8rem;
+
 		}
 	}
 

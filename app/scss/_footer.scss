@@ -10,7 +10,7 @@
         grid-template-columns: 2fr 1fr 1fr 1fr;
         grid-template-rows: 1fr auto;
         grid-template-areas:
-          'logo links1 links2 cta'
+          'logo links1 links2 cta '
           'social links1 links2 copyright';
         gap: 1rem;
         justify-items: start;
@@ -33,8 +33,7 @@
       img {
         width: 12rem;
         height: 3rem;
-        
-    }
+        }
 
 
   
@@ -108,19 +107,6 @@
       }
     }
   
-    &__cta {
-      @include breakpoint-up(large) {
-        grid-area: cta;
-        text-align: right;
-        justify-self: end;
-      }
-
-      a.button {
-        @include breakpoint-down(medium) {
-          margin-bottom: 1.875rem;
-        }
-      }
-    }
 
     &__copyright {
       font-size: 0.8125rem;

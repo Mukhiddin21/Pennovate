@@ -1,5 +1,11 @@
 .articles {
-	background-color: white;
+	background-color:white;
+	position: relative;
+	background-image: url('/images/atcl_bg.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 90rem 88rem;
 
 	p{
 		font-size: 1.25rem;
@@ -10,6 +16,18 @@
 			text-align: center;
 		}
 	}
+
+	hr { 
+		display: block;
+		width: 20rem;
+		height: 0.3rem;
+		margin-left: auto;
+		margin-right: auto;
+		border-style: inset;
+		background-color: $blue;
+		border-color: $blue ;
+	}
+
 
 	.ar_p{
 		font-size: 1.25rem;

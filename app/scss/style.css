@@ -113,7 +113,7 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 2.31rem;
+  font-size: 1.9  rem;
   margin-bottom: 2.5rem;
   margin-top: 1.5rem;
   font-weight: 700;
@@ -137,7 +137,7 @@ h2 {
 @media (min-width: 64em) {
   h2 {
     font-size: 2.25rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     margin-left: 5rem;
     font-weight: 700;
     text-align: center;
@@ -147,7 +147,7 @@ h2 {
 
 p {
   line-height: 1.5;
-  margin-bottom: 2.25rem;
+  margin-bottom: 6rem;
 }
 
 a, a:visited, a:hover {
@@ -245,8 +245,8 @@ a, a:visited, a:hover {
 button, .button {
   display: inline-block;
   padding: 0.875rem 2.1875rem;
-  background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
-  background: linear-gradient(to right, #31d35c, #2bb7da);
+  background: -webkit-gradient(linear, left top, right top, from(#002080), to(#2bb7da));
+  background: linear-gradient(to right, #002080, #2bb7da);
   border: 0;
   border-radius: 50px;
   cursor: pointer;
@@ -294,7 +294,8 @@ button, .btn2 {
   -webkit-transform: translateX(-33%);
           transform: translateX(-33%);
   position: absolute;
-  margin-top: 5rem;
+  -webkit-box-shadow: 0px 3px 12px rgba(15, 15, 15, 0.5);
+          box-shadow: 0px 3px 12px rgba(15, 15, 15, 0.5);
 }
 
 button:hover, .btn2:hover {
@@ -305,6 +306,7 @@ button:hover, .btn2:hover {
 button, .btn3 {
   display: inline-block;
   padding: 0.575rem 0.875rem;
+  width: 20rem;
   background-color: #002080;
   border-radius: 50px;
   cursor: pointer;
@@ -318,6 +320,9 @@ button, .btn3 {
           transform: translateX(-50%);
   position: absolute;
   margin-top: 2rem;
+  text-align: center;
+  -webkit-box-shadow: 0px 3px 12px rgba(15, 15, 15, 0.5);
+          box-shadow: 0px 3px 12px rgba(15, 15, 15, 0.5);
 }
 
 @media (min-width: 64em) {
@@ -456,16 +461,16 @@ button:hover, .btn3:hover {
 
 .hero {
   /* Add styles to the form container */
-  /* Full-width input fields */
+  /* Full-width input   fields */
 }
 
 .hero__image {
   position: relative;
-  background-image: url("/images/hero.png");
+  background-image: url("/images/hero1.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  min-height: 40rem;
+  min-height: 35rem;
 }
 
 .hero__image::after {
@@ -473,7 +478,7 @@ button:hover, .btn3:hover {
   position: relative;
   height: 100%;
   width: 100%;
-  background-image: url("/images/hero.png");
+  background-image: url("/images/hero1.png");
   background-size: 90%;
   background-repeat: no-repeat;
   background-position: center top;
@@ -506,7 +511,7 @@ button:hover, .btn3:hover {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   width: 360px;
-  height: 490px;
+  height: 530px;
   padding: 16px;
   background-color: white;
   border-radius: 2rem;
@@ -520,6 +525,73 @@ button:hover, .btn3:hover {
   font-size: 20px;
   font-weight: 700;
   text-align: center;
+}
+
+.hero .form .n_time {
+  margin: 2px 2px 10px 2px;
+  color: #002080;
+  font-size: 2.25rem;
+  font-weight: 700;
+  text-align: center;
+  font-family: system-ui;
+  letter-spacing: 0.3rem;
+}
+
+.hero .form .hms {
+  margin: 2px 2px 10px 2px;
+  color: gray;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  word-spacing: 0.6rem;
+}
+
+.hero .form b {
+  color: red;
+  font-weight: 400;
+  margin-left: 1rem;
+}
+
+.hero .form .input-icons i {
+  position: absolute;
+}
+
+.hero .form .input-icons {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.hero .form .icon {
+  padding: 15px;
+  min-width: 50px;
+  position: absolute;
+  color: #002080;
+}
+
+.hero .form .input-field {
+  width: 100%;
+  padding: 10px;
+  text-align: start;
+}
+
+.hero .form ::-webkit-input-placeholder {
+  position: absolute;
+  margin-left: 25px;
+}
+
+.hero .form :-ms-input-placeholder {
+  position: absolute;
+  margin-left: 25px;
+}
+
+.hero .form ::-ms-input-placeholder {
+  position: absolute;
+  margin-left: 25px;
+}
+
+.hero .form ::placeholder {
+  position: absolute;
+  margin-left: 25px;
 }
 
 .hero input[type=text], .hero input[type=password] {
@@ -546,11 +618,11 @@ button:hover, .btn3:hover {
           align-items: center;
   text-align: center;
   margin-bottom: 10px;
-  margin-top: 30px;
+  margin-top: 12px;
 }
 
 .feature {
-  background-color: #f3f4f6;
+  background-color: #ffffff;
   text-align: center;
 }
 
@@ -595,44 +667,20 @@ button:hover, .btn3:hover {
 
 @media (min-width: 64em) {
   .feature__item {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
   }
-}
-
-.feature__icon {
-  margin-bottom: 1.875rem;
-}
-
-@media (min-width: 64em) {
-  .feature__icon {
-    margin-bottom: 2.75rem;
-  }
-}
-
-.feature__title {
-  font-size: 1.25rem;
-  font-weight: 300;
-  line-height: 1.15;
-  color: #2d314d;
-  margin-bottom: 1rem;
-}
-
-@media (min-width: 64em) {
-  .feature__title {
-    font-size: 1.5rem;
-    margin-bottom: 1.2rem;
-  }
-}
-
-.feature__description {
-  font-size: 0.87rem;
-  line-height: 1.5rem;
 }
 
 .articles {
   background-color: white;
+  position: relative;
+  background-image: url("/images/atcl_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 90rem 88rem;
 }
 
 .articles p {
@@ -645,6 +693,17 @@ button:hover, .btn3:hover {
     font-size: 25px;
     text-align: center;
   }
+}
+
+.articles hr {
+  display: block;
+  width: 20rem;
+  height: 0.3rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  background-color: #002080;
+  border-color: #002080;
 }
 
 .articles .ar_p {
@@ -771,7 +830,7 @@ button:hover, .btn3:hover {
         grid-template-columns: 2fr 1fr 1fr 1fr;
     -ms-grid-rows: 1fr auto;
         grid-template-rows: 1fr auto;
-        grid-template-areas: 'logo links1 links2 cta' 'social links1 links2 copyright';
+        grid-template-areas: 'logo links1 links2 cta ' 'social links1 links2 copyright';
     gap: 1rem;
     justify-items: start;
   }
@@ -888,21 +947,6 @@ button:hover, .btn3:hover {
   color: #ed1d2e;
 }
 
-@media (min-width: 64em) {
-  .footer__cta {
-    grid-area: cta;
-    text-align: right;
-    -ms-grid-column-align: end;
-        justify-self: end;
-  }
-}
-
-@media (max-width: 63.9375em) {
-  .footer__cta a.button {
-    margin-bottom: 1.875rem;
-  }
-}
-
 .footer__copyright {
   font-size: 0.8125rem;
   color: #9698a6;
@@ -928,6 +972,27 @@ button:hover, .btn3:hover {
   background-color: #fafafa;
 }
 
+@media (min-width: 64em) {
+  .ending__text1 {
+    grid-area: txt;
+  }
+}
+
+@media (min-width: 64em) {
+  .ending__btn4 {
+    grid-area: btn;
+    text-align: left;
+    -ms-grid-column-align: start;
+        justify-self: start;
+  }
+}
+
+@media (min-width: 64em) {
+  .ending__image {
+    grid-area: img;
+  }
+}
+
 .ending__item {
   display: -ms-grid;
   display: grid;
@@ -938,15 +1003,16 @@ button:hover, .btn3:hover {
   background-color: #fafafa;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 64em) {
   .ending__item {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-  }
-  .ending__item .col3 {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-column: 1 / span 2;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
+    -ms-grid-rows: 1fr auto;
+        grid-template-rows: 1fr auto;
+        grid-template-areas: 'txt img ' 'btn img  ';
+    gap: 1px;
   }
 }
 
@@ -997,12 +1063,16 @@ button:hover, .btn3:hover {
   display: inline-block;
   padding: 0.575rem 1.1875rem;
   background-color: #ed1d2e;
-  border-radius: 50px;
+  border-radius: 12px;
   cursor: pointer;
   color: white;
   font-weight: 900;
   -webkit-transition: 300ms ease-in-out;
   transition: 300ms ease-in-out;
+  margin-left: 2rem;
+  margin-bottom: 4rem;
+  -webkit-box-shadow: 0px 3px 12px rgba(15, 15, 15, 0.5);
+          box-shadow: 0px 3px 12px rgba(15, 15, 15, 0.5);
 }
 
 .ending button:hover, .ending .btn4:hover {
@@ -1011,8 +1081,8 @@ button:hover, .btn3:hover {
 }
 
 .ending__image {
-  height: 18rem;
-  width: 21rem;
+  height: 19rem;
+  width: 24rem;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1044,11 +1114,6 @@ button:hover, .btn3:hover {
   .ending__text {
     padding: 1.875rem 1.5625rem;
   }
-}
-
-.ending__author {
-  font-size: 0.625rem;
-  margin-bottom: 0.75rem;
 }
 
 .ending__title {

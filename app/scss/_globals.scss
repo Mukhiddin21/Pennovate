@@ -38,7 +38,7 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 1.9rem;
+    font-size: 1.9  rem;
     margin-bottom:2.5rem ;
     margin-top: 1.5rem;
     font-weight: 700;
@@ -58,7 +58,7 @@ h2 {
 
     @include breakpoint-up(large){
         font-size: 2.25rem;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
         margin-left: 5rem;
         font-weight: 700;
         text-align: center;
@@ -70,7 +70,7 @@ h2 {
 
 p {
     line-height: 1.5;
-    margin-bottom: 2.25rem;
+    margin-bottom: 6rem;
 }
 
 a, a:visited, a:hover {
@@ -148,7 +148,7 @@ a, a:visited, a:hover {
 button, .button {
     display: inline-block;
     padding: 0.875rem 2.1875rem;
-    background: linear-gradient(to right, $limeGreen, $brightCyan);
+    background: linear-gradient(to right, $blue, $brightCyan);
     border: 0;
     border-radius: 50px;
     cursor: pointer;
@@ -192,7 +192,7 @@ button, .btn2 {
     left: 40%;
     transform: translateX(-33%);
     position: absolute;
-    margin-top: 5rem;
+    box-shadow: 0px 3px 12px rgba(15, 15, 15, 0.5);
 
 
     &:hover {
@@ -205,6 +205,7 @@ button, .btn2 {
 button, .btn3 {
     display: inline-block;
     padding: 0.575rem 0.875rem;
+    width: 20rem;
     background-color: #002080;
     border-radius: 50px;
     cursor: pointer;
@@ -216,6 +217,8 @@ button, .btn3 {
     transform: translateX(-50%);
     position: absolute;
     margin-top: 2rem;
+    text-align: center;
+    box-shadow: 0px 3px 12px rgba(15, 15, 15, 0.5);
 
     @include breakpoint-up(large) {
         font-size: $font-med;

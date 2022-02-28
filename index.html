@@ -8,7 +8,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./app/scss/style.css">
-
+<link rel="stylesheet" 
+          href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 
@@ -64,13 +66,20 @@
       <form  class="form">
         <h4>JOIN THE FREE PROGRAM</h4>
         <p class="time">Today's class starting in:</p>
-        <p class="time">00h:08m:34s</p>
-    
+        <p class="n_time">00:08:34</p>
+        <p class="hms">Hours Minutes Seconds</p>
+
         <label for="email"><b>Name</b></label>
-        <input type="text" placeholder="Enter your name" name="email" required>
-    
+        <div class="input-icons">
+          <i class="fa fa-user icon"></i>
+          <input class="input-field" type="text" placeholder="Enter your name" name="email" required>
+        </div>
+
         <label for="psw"><b>Email</b></label>
-        <input type="text" placeholder="Enter email" name="psw" required>
+        <div class="input-icons">
+          <i class="fa fa-envelope icon"></i>
+        <input class="input-field" type="text" placeholder="Enter your email" name="psw" required>
+          </div>
         <a href="#" class="btn2 ">Claim your free session</a>
         
       </form>
@@ -93,7 +102,7 @@
       <div class="feature__item">
         <div
           class="feature__image"
-          style="background-image: url('images/1logo.png')">
+          style="background-image: url('/images/1logo.png')">
         </div>
         
       </div>
@@ -101,28 +110,28 @@
       <div class="feature__item">
         <div
         class="feature__image"
-        style="background-image: url('images/2logo.png')">
+        style="background-image: url('/images/2logo.png')">
       </div>
       </div>
   
       <div class="feature__item">
         <div
           class="feature__image"
-          style="background-image: url('images/3logo.png')">
+          style="background-image: url('/images/3logo.png')">
         </div>
       </div>
   
       <div class="feature__item">
         <div
           class="feature__image"
-          style="background-image: url('images/4logo.png')">
+          style="background-image: url('/images/4logo.png')">
         </div>
       </div>
 
       <div class="feature__item">
         <div
           class="feature__image"
-          style="background-image: url('images/5logo.png')">
+          style="background-image: url('/images/5logo.png')">
         </div>
       </div>
   
@@ -137,6 +146,7 @@
 <section class="articles">
   <div class="article__content container container--pall">
     <h2>Get a degree from your dream collage by reducing the financial borden off your parents</h2>
+    <hr>
     <p>Get reputable work experience while studying so that you never have to worry about</p>
 
     <div class="article__grid">
@@ -153,7 +163,7 @@
 
         <div
           class="article__image"
-          style="background-image: url('images/s1.png')"
+          style="background-image: url('/images/s1.png')"
         ></div>
 
       </a>
@@ -170,7 +180,7 @@
 
         <div
           class="article__image"
-          style="background-image: url('images/s3.png')">
+          style="background-image: url('/images/s3.png')">
         </div>
       </a>
 
@@ -187,7 +197,7 @@
 
         <div
           class="article__image"
-          style="background-image: url('images/s2.png')">
+          style="background-image: url('/images/s2.png')">
         </div>
       </a>
 
@@ -214,21 +224,21 @@
           <div class="ending__description">
           Why take on that extra burden of high interest rates
           and spending years to pay back the education loan?  
-          </div>
-          <!-- <div><a href="#" class="btn4 ">Join the Training</a> </div> -->
+          </div>        
         </div>
-          
+
         <div class="ending__image"
-          style="background-image: url('images/c_man.png')">
+          style="background-image: url('/images/c_man.png')">
         </div>
         
+        <div><a href="#" class="btn4 ">Join the Training</a> </div> 
       </a>
 
       <a class="ending__item1  ">
 
         <div class="ending__text">
           <div class="ending__image1"
-          style="background-image: url('images/accept.png')">
+          style="background-image: url('/images/accept.png')">
         </div>
           <div class="text">
             Save your hard earning money
@@ -237,7 +247,7 @@
 
         <div class="ending__text">
           <div class="ending__image1"
-          style="background-image: url('images/close.png')">
+          style="background-image: url('/images/close.png')">
         </div>
           <div class="text">
             Start building your career from the word GO
@@ -246,7 +256,7 @@
         
         <div class="ending__text">
           <div class="ending__image1"
-          style="background-image: url('images/accept.png')">
+          style="background-image: url('/images/accept.png')">
         </div>
           <div class="text">
             Heavy interest on loans
@@ -255,7 +265,7 @@
 
         <div class="ending__text">
           <div class="ending__image1"
-          style="background-image: url('images/close.png')">
+          style="background-image: url('/images/close.png')">
         </div>
           <div class="text">
             Worry about installments
@@ -274,8 +284,8 @@
 <footer class="footer">
   <div class="container">
     
-    <a class="footer__logo" href="#">
-      <img src="images/P_logo.png"/>
+    <a class="footer__logo" >
+      <img src="/images/P_logo.png"/>
       <div class="footer__compinf">Pennovate is a digital marketing company that helps 
         service based businesses grow their revenue online.</div>
     </a>
@@ -283,19 +293,19 @@
 
     <div class="footer__social">
       <a href="">
-        <img src="images/icon-instagram.svg" alt="Instagram">
+        <img src="/images/icon-instagram.svg" alt="Instagram">
       </a>
   
       <a href="">
-        <img src="images/icon-facebook.svg" alt="Facebook">
+        <img src="/images/icon-facebook.svg" alt="Facebook">
       </a>
   
       <a href="">
-        <img src="images/icon-twitter.svg" alt="Twitter">
+        <img src="/images/icon-twitter.svg" alt="Twitter">
       </a>
   
       <a href="">
-        <img src="images/icon-youtube.svg" alt="Youtobe">
+        <img src="/images/icon-youtube.svg" alt="Youtobe">
       </a>
   
     </div>
@@ -324,6 +334,7 @@
       <a href="#">Become Partner</a>
     </div>
 
+
     <div class="footer__copyright">
       &copy; 2022 Pennovate All Rights Reserved.
     </div>
@@ -332,7 +343,7 @@
 </footer>
 
 
-  <script src="app/js/script.js"></script>
+  <script src="/app/js/script.js"></script>
 
 
 </body>

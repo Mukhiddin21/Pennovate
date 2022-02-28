@@ -466,7 +466,7 @@ button:hover, .btn3:hover {
 
 .hero__image {
   position: relative;
-  background-image: url("/images/hero1.png");
+  background-image: url(../images/hero1.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -478,7 +478,7 @@ button:hover, .btn3:hover {
   position: relative;
   height: 100%;
   width: 100%;
-  background-image: url("/images/hero1.png");
+  background-image: url(../images/hero1.png);
   background-size: 90%;
   background-repeat: no-repeat;
   background-position: center top;
@@ -676,7 +676,7 @@ button:hover, .btn3:hover {
 .articles {
   background-color: white;
   position: relative;
-  background-image: url("/images/atcl_bg.png");
+  background-image: url(../images/atcl_bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -830,7 +830,8 @@ button:hover, .btn3:hover {
         grid-template-columns: 2fr 1fr 1fr 1fr;
     -ms-grid-rows: 1fr auto;
         grid-template-rows: 1fr auto;
-        grid-template-areas: 'logo links1 links2 cta ' 'social links1 links2 copyright';
+        grid-template-areas: 'logo links1 links2 cta '
+ 'social links1 links2 copyright';
     gap: 1rem;
     justify-items: start;
   }
@@ -1011,7 +1012,8 @@ button:hover, .btn3:hover {
         grid-template-columns: 2fr 1fr;
     -ms-grid-rows: 1fr auto;
         grid-template-rows: 1fr auto;
-        grid-template-areas: 'txt img ' 'btn img  ';
+        grid-template-areas: 'txt img '
+ 'btn img  ';
     gap: 1px;
   }
 }

@@ -571,6 +571,7 @@ button:hover, .btn3:hover {
 .hero .form .input-field {
   width: 100%;
   padding: 10px;
+  padding-left 38px;
   text-align: start;
 }
 

@@ -466,7 +466,7 @@ button:hover, .btn3:hover {
 
 .hero__image {
   position: relative;
-  background-image: url(../images/hero1.png);
+  background-image: url(images/hero1.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -478,7 +478,7 @@ button:hover, .btn3:hover {
   position: relative;
   height: 100%;
   width: 100%;
-  background-image: url(../images/hero1.png);
+  background-image: url(images/hero1.png);
   background-size: 90%;
   background-repeat: no-repeat;
   background-position: center top;
